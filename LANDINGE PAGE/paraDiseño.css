@@ -2,6 +2,15 @@
     border-radius: 100px;
     border: solid rgba(39, 39, 39, 0.853);
     background-color: #3e3e3e;
+    position: absolute;
+    width: 1530px;
+    height: 100px;
+}
+
+.imagen{
+
+    position: absolute; top:150px;
+
 }
 
 .container {
@@ -55,3 +64,141 @@
     width: 100%;
     filter: drop-shadow(0 0 23px var(--animation-color))
   }
+
+  .botones {
+    font-size: 18px;
+    color: #e1e1e1;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .botones:focus,
+  .botones:hover {
+    color: #fff;
+  }
+  
+  .botones:focus:after,
+  .botones:hover:after {
+    width: 50%;
+    left: 0%;
+  }
+  
+  .botones:after {
+    content: "";
+    pointer-events: none;
+    bottom: 25px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
+  
+  #bot:focus,
+  #bot:hover {
+    color: #fff;
+  }
+  #bot:focus:after,
+  #bot:hover:after {
+    width: 50%;
+    right: 0%;
+  }
+  
+  #bot:after {
+    content: "";
+    pointer-events: none;
+    bottom: -5px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, right;
+  }
+
+  /* From Uiverse.io by Sashank02 */ 
+.card {
+    padding: 20px;
+    width: 300px;
+    min-height: 370px;
+    border-radius: 20px;
+    background: #e8e8e8;
+    box-shadow: 5px 5px 6px #dadada,
+                 -5px -5px 6px #f6f6f6;
+    transition: 0.4s;
+  }
+  
+  .card:hover {
+    translate: 0 -10px;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2e54a7;
+    margin: 15px 0 0 10px;
+  }
+  
+  .card-image {
+    min-height: 170px;
+    width: 250px;
+    background-color: #c9c9c9;
+    border-radius: 15px;
+    box-shadow: inset 8px 8px 10px #c3c3c3,
+              inset -8px -8px 10px #cfcfcf;
+  }
+  
+  .card-body {
+    margin: 13px 0 0 10px;
+    color: rgb(31, 31, 31);
+    font-size: 15px;
+    
+  }
+  
+  .footer {
+    float: right;
+    margin: 28px 0 0 18px;
+    font-size: 13px;
+    color: #636363;
+  }
+  
+  .by-name {
+    font-weight: 700;
+  }
+
+/*   .bgblue {
+    background: linear-gradient(135deg, #fffffff5, #3a4b8a, #ffffff98);
+    padding: 1px;
+    border-radius: 1.2rem;
+    box-shadow: 0px 1rem 1.5rem -0.9rem #000000e1;
+    max-width: 400px;
+    position: absolute; top: 1100px;
+    width: 100px;
+    height: 300px;
+  }
+  
+  .texto {
+    font-size: 1rem;
+    color: #bec4cf;
+    background: linear-gradient(135deg, #0d1120 0%, #3a4b8a 43%, #0d1120 100%);
+    padding: 1.5rem;
+    border-radius: 1.2rem;
+  }
+   */
